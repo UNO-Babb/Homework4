@@ -2,6 +2,7 @@
 For this homework, we are going to use Python tools to run a simulation on an intersection. We will then make a modification and write a final proposal paper for how we would advise changing the intersection.
 
 ## Important figures to use:
+- [Road construction cost by use](https://www.strongtowns.org/journal/2020/1/27/how-much-does-a-mile-of-road-actually-cost)
 - Every year it costs $24,000 to maintain a lane-mile of road.
   - A lane-mile is one mile of a lane, so multi-lane road will multiple this figure.
 - The cost of building a new lane is between $3 million and $5 million
@@ -106,9 +107,10 @@ The paper should be at least 3 pages in length, including your graphs and sample
 
 ## Resources
 - [Average Percentage of Travel by Hour](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4380130/)
-- [Omaha Traffic Counts](https://publicworks.cityofomaha.org/images/October_21_2019.pdf)
+- [Omaha Traffic Counts](https://publicworks.cityofomaha.org/residents2/traffic-engineering/traffic-information-center/traffic-counts-and-average-daily-volume)
 - [Cost of road maintenance](https://t4america.org/wp-content/uploads/2019/05/Repair-Priorities-2019.pdf)
 - [Cost of building roads](https://blog.midwestind.com/cost-of-building-road/)
+- [Cost of a mile of road](https://www.strongtowns.org/journal/2020/1/27/how-much-does-a-mile-of-road-actually-cost)
 - [Cost of traffic lights](https://www.wsdot.wa.gov/Operations/Traffic/signals.htm)
 - [Cost of roundabout](http://www.pedbikesafe.org/pedsafe/countermeasures_detail.cfm?CM_NUM=25)
 
