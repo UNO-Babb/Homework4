@@ -2,7 +2,7 @@ from collections import deque # double-ended queue
 from numpy import random
 import simpy
 from simpy.util import start_delayed
- 
+
 # Hourly percentages of car traffic from national models
 # Hourly rates begin with the midnight - 1:00 AM hour
 hourlyRates = [0.0081, 0.0052, 0.0047, 0.0057, 0.0099, 0.0230, 0.0489, 0.0679, 0.0629, 0.0531, 0.0509, 0.0538, 0.0560, 0.0574, 0.0635, 0.0733, 0.0804, 0.0775, 0.0579, 0.0437, 0.0338, 0.0280, 0.0205, 0.0138]
@@ -23,12 +23,12 @@ west = 9074
 EW_Lanes = 2
 NS_Lanes = 2
 
-EW_Green = 60
-NS_Green = 45
+EW_Green = 45
+NS_Green = 30
 green_direction = "EW"
 # Control Device can be a "Light", "Sign", or "Roundabout"
 # Stop signs cannot be used for intersections with more than 2 lanes
-controlDevice = "Light"
+controlDevice = "Sign"
 departRate = 2 #how quickly can they go once it is their turn in seconds.
 #Create an empty event log that will contain all the data for the simulation
 eventLog = []
@@ -128,6 +128,7 @@ def departSign(env):
                     signOrder.append("E")
 
         yield env.timeout(departRate)
+
 
 
 def departRoundabout(env, dir):
