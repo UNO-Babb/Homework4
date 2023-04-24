@@ -23,13 +23,13 @@ west = 9074
 EW_Lanes = 2
 NS_Lanes = 2
 
-EW_Green = 45
-NS_Green = 30
+EW_Green = 60
+NS_Green = 45
 green_direction = "EW"
 # Control Device can be a "Light", "Sign", or "Roundabout"
 # Stop signs cannot be used for intersections with more than 2 lanes
-controlDevice = "Sign"
-departRate = 2 #how quickly can they go once it is their turn in seconds.
+controlDevice = "Light"
+departRate = 3 #how quickly can they go once it is their turn in seconds.
 #Create an empty event log that will contain all the data for the simulation
 eventLog = []
 
@@ -102,8 +102,10 @@ def departSign(env):
     """
     while True:
         if len(signOrder) == 0:
+            yield env.timeout(1)
             pass
         else:
+            yield env.timeout(departRate)
             carDir = signOrder.pop(0)
 
             if carDir == "N":
@@ -127,7 +129,7 @@ def departSign(env):
                 if len(eastCars) > 0:
                     signOrder.append("E")
 
-        yield env.timeout(departRate)
+
 
 
 
