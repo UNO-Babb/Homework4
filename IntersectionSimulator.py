@@ -7,6 +7,8 @@ from simpy.util import start_delayed
 # Hourly rates begin with the midnight - 1:00 AM hour
 hourlyRates = [0.0081, 0.0052, 0.0047, 0.0057, 0.0099, 0.0230, 0.0489, 0.0679, 0.0629, 0.0531, 0.0509, 0.0538, 0.0560, 0.0574, 0.0635, 0.0733, 0.0804, 0.0775, 0.0579, 0.0437, 0.0338, 0.0280, 0.0205, 0.0138]
 
+#You only need to edit code in the block below.
+#**************************************************************************
 # From the Omaha Traffic Count PDF
 # 67th & Pacific 31,938 8,752 13,514 18,594 23,016 09/17
 # 50th & Underwood Ave 12,816 4,856 4,432 7,270 9,074
@@ -30,12 +32,13 @@ green_direction = "EW"
 # Stop signs cannot be used for intersections with more than 2 lanes
 controlDevice = "Light"
 departRate = 3 #how quickly can they go once it is their turn in seconds.
-#Create an empty event log that will contain all the data for the simulation
-eventLog = []
 
 #Output file
 outFile = "output.csv"
+#*****************************************************************************
 
+#Create an empty event log that will contain all the data for the simulation
+eventLog = []
 #Useful Constants
 SECONDS_PER_HOUR = 60 * 60
 SECONDS_PER_DAY = SECONDS_PER_HOUR * 24

@@ -11,10 +11,19 @@ For this homework, we are going to use Python tools to run a simulation on an in
 - The cost of installing a roundabout varies between $45,000 to $150,000 per intersection.
 
 
+##Real-world Example
+Omaha is currently conducting traffic studies to determine if a light should be removed and replaced with stop signs.
+- [Omaha Traffic Signal Study](https://www.keepomahamoving.com/projects/traffic-control-signal-removal-field-study)
+One of these has received enough critical feedback that the city has reverted to the signal.
+- [Stoplight to return to Dundee intersection after traffic study](https://www.ketv.com/article/omaha-stoplight-dundee-intersection-traffic-study/62881731)
+- This is actually one of the examples I frequently use in class and it was interesting to see the real-world implications of the removal.
+
 ## IntersectionSimulator.py
 This is a very rough (I wrote it) simulation of an intersection. You will be able to adjust a number of the variables and should have a rough understanding of how the process works.
 ### Traffic counts
 - Pick an intersection in Omaha and look it up in the Omaha_Traffic_Counts.pdf document.
+  - [Omaha Traffic Counts](https://publicworks.cityofomaha.org/residents2/traffic-engineering/traffic-information-center/traffic-counts-and-average-daily-volume)
+  - You may pick a different city if you want - you just need to provide the data from that city's reports.
 - Input the count for North, South, East, and West traffic.
   - The numbers are cut in half because each car is counted twice.
   - The reason is that the number of people turning can be calculated.
@@ -48,7 +57,7 @@ This is a very rough (I wrote it) simulation of an intersection. You will be abl
 - After making changes, you should look at the data.
   - Open in Excel
   - Make a graph in Python
-  - Examine it in Atom
+  - Examine it in a text editor
 **What is in the data?**
 - Car Number: All cars have a unique number
 - Arrive: What time did they arrive - measured in seconds from midnight
@@ -72,6 +81,8 @@ Example analysis:
 ## DataVisualization.py
 I used this file to do some analysis of the data I collected. One of the things I did was to group the traffic by hour.
 - You might want to group by half-hour or every ten minutes.
+- You should also look at different methods of graphing.
+- There are other treatments you can provide in a matplotlib graph.
 
 ## Final Report
 Use the data about the cost of building, or maintaining a road to make a justification on why you would change an intersection.
