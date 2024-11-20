@@ -14,6 +14,7 @@ For this homework, we are going to use Python tools to run a simulation on an in
 ##Real-world Example
 Omaha is currently conducting traffic studies to determine if a light should be removed and replaced with stop signs.
 - [Omaha Traffic Signal Study](https://www.keepomahamoving.com/projects/traffic-control-signal-removal-field-study)
+
 One of these has received enough critical feedback that the city has reverted to the signal.
 - [Stoplight to return to Dundee intersection after traffic study](https://www.ketv.com/article/omaha-stoplight-dundee-intersection-traffic-study/62881731)
 - This is actually one of the examples I frequently use in class and it was interesting to see the real-world implications of the removal.
