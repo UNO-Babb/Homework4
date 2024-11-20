@@ -11,7 +11,7 @@ For this homework, we are going to use Python tools to run a simulation on an in
 - The cost of installing a roundabout varies between $45,000 to $150,000 per intersection.
 
 
-##Real-world Example
+## Real-world Example
 Omaha is currently conducting traffic studies to determine if a light should be removed and replaced with stop signs.
 - [Omaha Traffic Signal Study](https://www.keepomahamoving.com/projects/traffic-control-signal-removal-field-study)
 
